@@ -49,11 +49,11 @@ with st.container():
         assistant = TrackableAssistantAgent(
             name="assistant", llm_config=llm_config)
     # create an AssistantAgent instance named "writer"
-        writer = ChainlitAssistantAgent(
+        writer = TrackableAssistantAgent(
             name="Writer", llm_config=llm_config,
             system_message="""Writer. Help the User_Proxy analyse the articles. Synthesize the Articles"""
             )
-        proof_reader = ChainlitAssistantAgent(
+        proof_reader = TrackableAssistantAgent(
             name="Proof_Reader", llm_config=llm_config,
             system_message="""Proof_Reader. Help the writer and the user_proxy proofread the articles."""
             )
