@@ -10,7 +10,7 @@ from typing import Dict, Optional, Union
 
 import autogen
 from autogen import Agent, AssistantAgent, UserProxyAgent, config_list_from_json
-import chainlit as cl
+import streamlit as cl
 
 # Edit the URL Here
 URL = "https://www.w3schools.com/xml/simple.xml"
