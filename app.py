@@ -67,7 +67,6 @@ with st.container():
                 Reply CONTINUE, or the reason why the task is not solved yet."""
             )
             
-
         # Create an event loop
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
