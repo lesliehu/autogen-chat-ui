@@ -61,7 +61,7 @@ with st.container():
         # create a UserProxyAgent instance named "user"
         user_proxy = TrackableUserProxyAgent(
             name="user", human_input_mode="ALWAYS", llm_config=llm_config,
-            code_execution_config=False,
+            code_execution_config=True,
             system_message="""Manager. Administrate the agents on a plan. Communicate with the proofreader to proofread the output. 
             Communicate with the writer to analyse the content and ask for it to give a summary. 
                 Reply CONTINUE, or the reason why the task is not solved yet."""
